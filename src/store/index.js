@@ -86,6 +86,8 @@ export default createStore({
     async fetchDataFromAPI ({commit}){
 //fetching data
       try{
+        
+        
         const homeResponse = await axios.get(' http://localhost:3000/Home');
         const aboutResponse = await axios.get(' http://localhost:3000/About');
         const resumeResponse = await axios.get(' http://localhost:3000/Resume');
@@ -99,6 +101,7 @@ export default createStore({
         const contactResponse = await axios.get(' http://localhost:3000/Contact');
         const footerResponse = await axios.get(' http://localhost:3000/Footer');
 
+       
         const homeData = homeResponse.data;
         const aboutData = aboutResponse.data;
         const resumeData = resumeResponse.data;
