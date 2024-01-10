@@ -1,8 +1,8 @@
 <template>
   <div class="about">
     <div class="neon-box">
-    <h2>{{ aboutData?.[0]?.heading || 'Default Heading' }}</h2>
-    <p>{{ aboutData?.[0]?.['para'] || 'Default Subheading' }}</p>
+    <h2>{{$store.state.About.About.length ? $store.state.About.About[0].heading : 'Loading...'}}</h2>
+    <p>{{$store.state.About.About.length ? $store.state.About.About[0]['para'] : 'Loading...'}}</p>
     </div>
   </div>
 </template>
