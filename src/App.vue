@@ -22,6 +22,7 @@ export default {
 };
 </script>
 <style>
+@import '~boxicons/css/boxicons.min.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,9 +33,10 @@ export default {
 
 body {
   background-color: #160808;
-  color: #ffffff;
+  color: aliceblue;
   font-family: 'Arial', sans-serif;
 }
+
 
 .home {
   padding: 20px;

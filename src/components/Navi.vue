@@ -19,6 +19,7 @@
   
   <style scoped>
   nav {
+    
     padding: 30px;
     background-color: transparent;
     text-align: right;

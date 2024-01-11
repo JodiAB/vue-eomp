@@ -17,10 +17,10 @@ module.exports = {
       .end();
   }
 };
-module.exports = {
-  configureWebpack: {
-    plugins: [
-      new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
-    ]
-  }
-};
+// module.exports = {
+//   configureWebpack: {
+//     plugins: [
+//       new CopyWebpackPlugin([{ from: 'src/assets', to: 'assets' }])
+//     ]
+//   }
+// };

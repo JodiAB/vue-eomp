@@ -106,8 +106,8 @@ export default {
 .line {
   position: absolute;
   left: 50%;
-  top: 277px;
-  bottom: -172px;
+  top: 563px;
+  bottom: -477px;
   width: 2px;
   background-color: #3498db;
   transform: translateX(-50%);

@@ -5,7 +5,7 @@
 
         <div class="card__container bd-container">
             <div class="card__glass">
-                <img src="assets/img/img1.jpg" alt="" class="card__img">
+              <img :src="$store.state.Feedback.Feedback[0].img"  class="card__img">
 
                 <div class="card__data">
                     <h2 >{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[0].name : 'Loading...'}}</h2>
@@ -13,7 +13,7 @@
                     <p>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[0]['des'] : 'Loading...'}}</p>
                 </div>
 
-                <a href="#" class="card__button">Know more</a>
+                
                 
                 <div class="card__social">
                     <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
@@ -23,7 +23,7 @@
             </div>
 
             <div class="card__glass">
-                <img src="assets/img/img2.jpg" alt="" class="card__img">
+              <img :src="$store.state.Feedback.Feedback[1].img"  class="card__img">
 
                 <div class="card__data">
                     <h2>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[1].name : 'Loading...'}}</h2>
@@ -31,7 +31,7 @@
                     <p>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[1]['des'] : 'Loading...'}}</p>
                 </div>
 
-                <a href="#" class="card__button">Know more</a>
+                
 
                 <div class="card__social">
                     <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="card__glass">
-                <img src="assets/img/img3.jpg" alt="" class="card__img">
+              <img :src="$store.state.Feedback.Feedback[2].img"  class="card__img">
 
                 <div class="card__data">
                     <h2>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[2].name : 'Loading...'}}</h2>
@@ -49,7 +49,7 @@
                     <p>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[2]['des'] : 'Loading...'}}</p>
                 </div>
 
-                <a href="#" class="card__button">Know more</a>
+                
 
                 <div class="card__social">
                     <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
@@ -60,7 +60,7 @@
         </div>
         <div class="card__container bd-container">
             <div class="card__glass">
-                <img src="assets/img/img1.jpg" alt="" class="card__img">
+              <img :src="$store.state.Feedback.Feedback[3].img"  class="card__img">
 
                 <div class="card__data">
                     <h2>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[3].name : 'Loading...'}}</h2>
@@ -68,7 +68,7 @@
                     <p>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[3]['des'] : 'Loading...'}}</p>
                 </div>
 
-                <a href="#" class="card__button">Know more</a>
+                
                 
                 <div class="card__social">
                     <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
@@ -78,7 +78,7 @@
             </div>
 
             <div class="card__glass">
-                <img src="assets/img/img2.jpg" alt="" class="card__img">
+              <img :src="$store.state.Feedback.Feedback[4].img"  class="card__img">
 
                 <div class="card__data">
                     <h2>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[4].name : 'Loading...'}}</h2>
@@ -86,7 +86,7 @@
                     <p>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[4]['des'] : 'Loading...'}}</p>
                 </div>
 
-                <a href="#" class="card__button">Know more</a>
+                
 
                 <div class="card__social">
                     <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
@@ -96,15 +96,17 @@
             </div>
 
             <div class="card__glass">
-                <img src="assets/img/img3.jpg" alt="" class="card__img">
+              <img :src="$store.state.Feedback.Feedback[5].img"  class="card__img">
+               
 
                 <div class="card__data">
                     <h2>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[5].name : 'Loading...'}}</h2>
                     <span class="card__profession">Ui/Ux Design</span>
                     <p>{{$store.state.Feedback.Feedback.length ? $store.state.Feedback.Feedback[5]['des'] : 'Loading...'}}</p>
+                    
                 </div>
 
-                <a href="#" class="card__button">Know more</a>
+                
 
                 <div class="card__social">
                     <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
@@ -120,7 +122,7 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
 /*========== GOOGLE FONTS ==========*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 

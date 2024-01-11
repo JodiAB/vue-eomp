@@ -1,4 +1,5 @@
 <template >
+  <div class="desire">
 	<div>
 		<h2>{{ contactsData?.[0]?.heading || 'Default Heading' }}</h2>
 		<p>{{ contactsData?.[0]?.['subHeading'] || 'Default Subheading' }}</p>
@@ -26,6 +27,7 @@
 	 
 	  
 	</div>
+  </div>
   </template>
   <script>
   import { mapState } from 'vuex';
@@ -136,4 +138,25 @@
   color:#888;
   }
   
+  .desire {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-50deg, yellow, #d5aa28, Black, #8e6729);
+    background-size: 200% 200%; /* Increase the size to cover the entire animation */
+    animation: fire 7s ease infinite;
+  }
+  
+  @keyframes fire {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   </style>
