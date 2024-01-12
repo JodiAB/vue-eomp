@@ -1,24 +1,26 @@
 <template >
   <div class="desire">
 	<div>
-		<h2>{{ contactsData?.[0]?.heading || 'Default Heading' }}</h2>
-		<p>{{ contactsData?.[0]?.['subHeading'] || 'Default Subheading' }}</p>
+		<h2>Contact Me</h2>
+		<p>Dont Be Shy</p>
+    
 	</div>
 	<div class="container">  
-	  <form id="contact" action="" method="post">
+	  <form id="contact" action="https://formspree.io/f/xeqbvwyd"
+    method="POST">
 		<h3>Quick Contact</h3>
 		<h4>Contact me today, and get reply with in 24 hours!</h4>
 		<fieldset>
-		  <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+		  <input name="text" placeholder="Your name" type="text" tabindex="1" required autofocus>
 		</fieldset>
 		<fieldset>
-		  <input placeholder="Your Email Address" type="email" tabindex="2" required>
+		  <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
 		</fieldset>
 		<fieldset>
-		  <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+		  <input name="tel" placeholder="Your Phone Number" type="tel" tabindex="3" required>
 		</fieldset>
 		<fieldset>
-		  <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+		  <textarea type="message" name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
 		</fieldset>
 		<fieldset>
 		  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>

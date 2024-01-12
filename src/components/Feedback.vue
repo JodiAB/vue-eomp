@@ -15,11 +15,7 @@
 
                 
                 
-                <div class="card__social">
-                    <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-twitter' ></i></a>
-                </div>
+                
             </div>
 
             <div class="card__glass">
@@ -33,11 +29,7 @@
 
                 
 
-                <div class="card__social">
-                    <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-twitter' ></i></a>
-                </div>
+                
             </div>
 
             <div class="card__glass">
@@ -51,11 +43,7 @@
 
                 
 
-                <div class="card__social">
-                    <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-twitter' ></i></a>
-                </div>
+                
             </div>
         </div>
         <div class="card__container bd-container">
@@ -70,11 +58,7 @@
 
                 
                 
-                <div class="card__social">
-                    <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-twitter' ></i></a>
-                </div>
+                
             </div>
 
             <div class="card__glass">
@@ -88,11 +72,7 @@
 
                 
 
-                <div class="card__social">
-                    <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-twitter' ></i></a>
-                </div>
+                
             </div>
 
             <div class="card__glass">
@@ -108,11 +88,7 @@
 
                 
 
-                <div class="card__social">
-                    <a href="#" class="card__link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="card__link"><i class='bx bxl-twitter' ></i></a>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -124,7 +100,7 @@ export default {
 </script>
 <style scoped>
 /*========== GOOGLE FONTS ==========*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 
 /*========== VARIABLES CSS ==========*/
 :root {
@@ -245,33 +221,7 @@ img{
               rgba(251,251,254,.4));
 }
 
-.card__social{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
-.card__link{
-  display: block;
-  font-size: 1.35rem;
-  color: var(--title-color);
-  margin: 1rem 0;
-  transform: translateX(-5rem);
-}
-
-.card__link:nth-child(1){
-  transition: .2s;
-}
-.card__link:nth-child(2){
-  transition: .5s;
-}
-.card__link:nth-child(3){
-  transition: .7s;
-}
-
-.card__glass:hover .card__link{
-  transform: translateX(-1.5rem);
-}
 
 .card__circle{
   position: absolute;
@@ -303,7 +253,7 @@ img{
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 720px){
   .bd-container{
     margin-left: auto;
     margin-right: auto;

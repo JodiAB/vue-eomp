@@ -1,6 +1,7 @@
 <template >
     <section id="skills">
 
+
         <h1>{{$store.state.Time.Time.length ? $store.state.Time.Time[3].heading : 'Loading...'}}</h1>
 
 
@@ -95,7 +96,7 @@ export default {
     
 }
 </script>
-<style scoped>
+<style>
 button{
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -166,7 +167,7 @@ button{
   }
   
   .card-content {
-    padding: 20px;
+    padding: 22px;
     background-color:rgb(24, 24, 24) ;
       }
 
@@ -414,5 +415,14 @@ button{
 }
 #skills{
     color: aliceblue;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px)  {
+    .containers {
+        width: 404px;
+        height: 500px;
+        padding: 0px 20px;
+        margin-left: 116px;
+    }
 }
 </style>

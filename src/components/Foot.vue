@@ -1,6 +1,6 @@
 <template >
     <div class="footer">
-        <h2 class="foot">&copy; 2024 Jodi Abrahams Portfolio. All rights reserved.</h2>
+        <h2 class="foot">&copy;  <span>{{ currYear }}</span> Jodi Abrahams Portfolio. All rights reserved.</h2>
     </div>
 </template>
 <script>
@@ -15,6 +15,11 @@ import { mapState } from 'vuex';
     created() {
       this.$store.dispatch('fetchDataFromAPI'); // Corrected action name
     },
+    data() {
+            return {
+                currYear: new Date().getFullYear()
+            }
+        }
   }
 </script>
 <style >

@@ -2,7 +2,7 @@
 
 <template>
     <nav>
-      <router-link to="/home">Home</router-link> |
+      <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/resume">Resume</router-link> |
       <router-link to="/projects">Projects</router-link> |
@@ -20,7 +20,7 @@
   <style scoped>
   nav {
     
-    padding: 30px;
+    padding: 10px;
     background-color: transparent;
     text-align: right;
   }

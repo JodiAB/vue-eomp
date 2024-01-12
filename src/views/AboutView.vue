@@ -1,12 +1,14 @@
 <template>
 <div class="desire">
   <div class="about">
+   
     <div class="neon-box lub">
     <h2>{{$store.state.About.About.length ? $store.state.About.About[0].heading : 'Loading...'}}</h2>
     <p>{{$store.state.About.About.length ? $store.state.About.About[0]['para'] : 'Loading...'}}</p>
- 
+
     </div>
   </div>
+  <img class="image" :src="$store.state.About.About[0].img">
 </div>
 </template>
 
@@ -25,7 +27,15 @@ export default {
 }
 </script>
 <style scoped>
-
+.image{
+  
+  display: flex;
+  margin-top: -30%;
+  margin-left: 70%;
+   height:450px;
+   border: 5px solid aliceblue;
+   border-radius: 50px;
+}
 .about{
   display: flex;
   justify-content: flex-end;
@@ -39,7 +49,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background: linear-gradient(-50deg, red, #a82d2d, black, #a82d2d);
   background-size: 200% 200%; 
   animation: fire 7s ease infinite;
@@ -56,5 +66,19 @@ export default {
 100%{
   background-position: 0% 50%;
 }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+.image{
+  display: flex;
+    margin-left: 35%;
+    height: 450px;
+    border: 5px solid aliceblue;
+    border-radius: 50px;
+}
+.desire{
+  height: 140vh;
+}
+  
 }
 </style>

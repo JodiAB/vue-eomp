@@ -50,4 +50,16 @@ export default {
   background-position: 0% 50%;
 }
 }
+@media only screen and (min-width: 375px) and (max-width: 768px){
+.desire{
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+width: 100%;
+height: 340vh;
+overflow: hidden;
+background: linear-gradient(-50deg, rgb(10, 108, 61), #62f8b9, black, #3ffbe5);
+background-size: 200% 200%;
+animation: fire-6375b3f9 7s ease infinite;
+}
+}
 </style>
