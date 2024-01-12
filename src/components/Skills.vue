@@ -1,23 +1,28 @@
 <template >
     <section id="skills">
 
-          <h1 class="sub-title">My <span>Skills</span></h1>
+
+        <h1>{{$store.state.Time.Time.length ? $store.state.Time.Time[3].heading : 'Loading...'}}</h1>
+
+
+
+
 <div class="cardL">
          
 
             <div class="card">
                 <div class="card-content">
-                <h2 class="card-title">HTML</h2>
-                  <h3 class="card-subtitle">Intermediate</h3>
-                  <p class="card-description">I develop basic to complex HTML pages for simple styling in CSS and understandable layout.</p>
+                    <h2 class="card-title">{{$store.state.Time.Time.length ? $store.state.Time.Time[4].heading : 'Loading...'}}</h2>
+                  <h3 class="card-subtitle"> {{$store.state.Time.Time.length ? $store.state.Time.Time[4]['subtitle'] : 'Loading...'}}</h3>
+                  <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[4]['Description'] : 'Loading...'}}</p>
                   </div>
                 </div>
                           
               <div class="card">
                 <div class="card-content">
-                  <h2 class="card-title">CSS</h2>
-                  <h3 class="card-subtitle">Intermediate</h3>
-                  <p class="card-description">I love styling HTML tags so that my imagination/vision can come to reality by using animations.</p>
+                    <h2 class="card-title">{{$store.state.Time.Time.length ? $store.state.Time.Time[5].heading : 'Loading...'}}</h2>
+                  <h3 class="card-subtitle"> {{$store.state.Time.Time.length ? $store.state.Time.Time[5]['subtitle'] : 'Loading...'}}</h3>
+                  <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[5]['Description'] : 'Loading...'}}</p>
                 </div>
               </div>
         </div>
@@ -25,17 +30,17 @@
       <div class="cardR">
               <div class="card">
                 <div class="card-content">
-                  <h2 class="card-title">Javascript</h2>
-                  <h3 class="card-subtitle">Beginner</h3>
-                  <p class="card-description">Still learning the basics of Javascript but can create basic functionality.</p>
+                    <h2 class="card-title">{{$store.state.Time.Time.length ? $store.state.Time.Time[6].heading : 'Loading...'}}</h2>
+                    <h3 class="card-subtitle"> {{$store.state.Time.Time.length ? $store.state.Time.Time[6]['subtitle'] : 'Loading...'}}</h3>
+                    <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[6]['Description'] : 'Loading...'}}</p>
                 </div>
               </div>
             
               <div class="card">
                 <div class="card-content">
-                  <h2 class="card-title">Bootstrap</h2>
-                  <h3 class="card-subtitle">Beginner</h3>
-                  <p class="card-description">Still learning the basics of Bootstrap, and the Docs are helping me understand it much more easily.</p>
+                <h2 class="card-title">{{$store.state.Time.Time.length ? $store.state.Time.Time[7].heading : 'Loading...'}}</h2>
+                  <h3 class="card-subtitle"> {{$store.state.Time.Time.length ? $store.state.Time.Time[7]['subtitle'] : 'Loading...'}}</h3>
+                  <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[7]['Description'] : 'Loading...'}}</p>
                 </div>
               </div>
 
@@ -43,7 +48,7 @@
         
   
           <div class="containers">
-              <h1 class="headings">Professional Skills</h1>
+              <h1 class="headings">{{$store.state.Time.Time.length ? $store.state.Time.Time[8].heading : 'Loading...'}}</h1>
               <div class="radial-bars">
   
                   <div class="radial-bar">
@@ -51,8 +56,8 @@
                       <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                       <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                   </svg>
-                  <div class="percentage">90%</div>
-                  <div class="text">Teamwork</div>
+                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[8]['percentage'] : 'Loading...'}}</div>
+                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[8]['text'] : 'Loading...'}}</div>
               </div>
              
               <div class="radial-bar">
@@ -61,8 +66,8 @@
                       <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                       <circle class="path path-2" cx="100" cy="100" r="80"></circle>
                   </svg>
-                  <div class="percentage">70%</div>
-                  <div class="text">Communication</div>
+                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[9]['percentage'] : 'Loading...'}}</div>
+                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[9]['text'] : 'Loading...'}}</div>
               </div>
               <div class="radial-bar">
   
@@ -70,8 +75,8 @@
                       <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                       <circle class="path path-3" cx="100" cy="100" r="80"></circle>
                   </svg>
-                  <div class="percentage">80%</div>
-                  <div class="text">Problem Solving</div>
+                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[10]['percentage'] : 'Loading...'}}</div>
+                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[10]['text'] : 'Loading...'}}</div>
               </div>
               <div class="radial-bar">
   
@@ -79,8 +84,8 @@
                       <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                       <circle class="path path-4" cx="100" cy="100" r="80"></circle>
                   </svg>
-                  <div class="percentage">93%</div>
-                  <div class="text">Creative</div>
+                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[11]['percentage'] : 'Loading...'}}</div>
+                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[11]['text'] : 'Loading...'}}</div>
               </div>
           </div>
           </div>
@@ -91,7 +96,7 @@ export default {
     
 }
 </script>
-<style >
+<style>
 button{
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -162,7 +167,7 @@ button{
   }
   
   .card-content {
-    padding: 20px;
+    padding: 22px;
     background-color:rgb(24, 24, 24) ;
       }
 
@@ -172,7 +177,7 @@ button{
   }
 
   .card-subtitle {
-    color: #948d8d;
+    color: #c4acac;
     margin-bottom: 10px;
   }
 
@@ -197,6 +202,7 @@ button{
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
+    color: aliceblue;
 }
 
 .bar{
@@ -311,6 +317,7 @@ button{
    flex-wrap:wrap;
    justify-content: space-evenly;
    align-items: flex-start;
+
 }
 
 .radial-bars .radial-bar{
@@ -389,6 +396,7 @@ button{
     font-weight: 500;
     animation: showText 0.5 1s linear forwards;
     opacity: 0;
+    color: aliceblue
 }
 
 .radial-bar .text{
@@ -402,5 +410,19 @@ button{
     font-weight: 500;
     animation: showText 0.5 1s linear forwards;
     opacity: 0;
+    color: aliceblue;
+
+}
+#skills{
+    color: aliceblue;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px)  {
+    .containers {
+        width: 404px;
+        height: 500px;
+        padding: 0px 20px;
+        margin-left: 116px;
+    }
 }
 </style>

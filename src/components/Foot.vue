@@ -1,6 +1,6 @@
 <template >
     <div class="footer">
-        <h2 class="foot">{{ footerData?.[0]?.heading || 'Default Heading' }}</h2>
+        <h2 class="foot">&copy;  <span>{{ currYear }}</span> Jodi Abrahams Portfolio. All rights reserved.</h2>
     </div>
 </template>
 <script>
@@ -15,21 +15,25 @@ import { mapState } from 'vuex';
     created() {
       this.$store.dispatch('fetchDataFromAPI'); // Corrected action name
     },
+    data() {
+            return {
+                currYear: new Date().getFullYear()
+            }
+        }
   }
 </script>
 <style >
-.footer {
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-  }
+
   
   .foot {
-    color: #00ff00; /* Neon green color */
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Neon glow effect */
+    position:fixed ;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
   }
   
 </style>

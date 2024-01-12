@@ -106,10 +106,31 @@ export default {
 .line {
   position: absolute;
   left: 50%;
-  top: 277px;
-  bottom: -172px;
+  top: 756px;
+  bottom: -961px;
   width: 2px;
   background-color: #3498db;
   transform: translateX(-50%);
 }
+
+@media only screen and (min-width: 375px) and (max-width: 768px)  {
+  .box-l{
+      right: 385px;
+      border: 2px solid #f0f8ff;
+      margin: 53px 464px;
+      padding: 0px 150px 10px 10px;
+     
+  }
+  .box-r{
+    left: 170px;
+    border: 2px solid #f0f8ff;
+    margin: 125px 260px;
+    padding: 0px 225px 0px -1px;
+  }
+
+  .line{
+    bottom: -1474px;
+  }
+ 
+  }
 </style>
