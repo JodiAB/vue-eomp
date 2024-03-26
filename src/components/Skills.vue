@@ -47,48 +47,6 @@
 </div>
         
   
-          <div class="containers">
-              <h1 class="headings">{{$store.state.Time.Time.length ? $store.state.Time.Time[8].heading : 'Loading...'}}</h1>
-              <div class="radial-bars">
-  
-                  <div class="radial-bar">
-                  <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                      <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                      <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[8]['percentage'] : 'Loading...'}}</div>
-                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[8]['text'] : 'Loading...'}}</div>
-              </div>
-             
-              <div class="radial-bar">
-  
-                  <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                      <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                      <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[9]['percentage'] : 'Loading...'}}</div>
-                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[9]['text'] : 'Loading...'}}</div>
-              </div>
-              <div class="radial-bar">
-  
-                  <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                      <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                      <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[10]['percentage'] : 'Loading...'}}</div>
-                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[10]['text'] : 'Loading...'}}</div>
-              </div>
-              <div class="radial-bar">
-  
-                  <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                      <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                      <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                  </svg>
-                  <div class="percentage">{{$store.state.Time.Time.length ? $store.state.Time.Time[11]['percentage'] : 'Loading...'}}</div>
-                  <div class="text">{{$store.state.Time.Time.length ? $store.state.Time.Time[11]['text'] : 'Loading...'}}</div>
-              </div>
-          </div>
-          </div>
       </section>
 </template>
 <script>
@@ -422,7 +380,42 @@ button{
         width: 404px;
         height: 500px;
         padding: 0px 20px;
-        margin-left: 116px;
+        margin-left: -38px;
     }
+    .radial-bar .text {
+        left: 23%;
+    }
+
 }
+@media only screen and (max-width: 320px) {
+    .containers {
+      width: 280px;
+      padding: 0px 10px;
+      margin-left: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .containers {
+      width: 320px;
+      padding: 0px 20px;
+      margin-left: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 376px) and (max-width: 425px) {
+    .containers {
+      width: 360px;
+      padding: 0px 20px;
+      margin-left: 30px;
+    }
+  }
+  
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    .containers {
+      width: 404px;
+      padding: 0px 20px;
+      margin-left: 116px;
+    }
+  }
 </style>

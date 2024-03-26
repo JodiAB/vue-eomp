@@ -2,8 +2,8 @@
 <div class="desire">
   <div class="about">
    
-    <div class="neon-box lub">
     <h2>{{$store.state.About.About.length ? $store.state.About.About[0].heading : 'Loading...'}}</h2>
+    <div class="neon-box lub">
     <p>{{$store.state.About.About.length ? $store.state.About.About[0]['para'] : 'Loading...'}}</p>
 
     </div>
@@ -30,7 +30,7 @@ export default {
 .image{
   
   display: flex;
-  margin-top: -30%;
+  margin-top: -13%;
   margin-left: 70%;
    height:450px;
    border: 5px solid aliceblue;
@@ -43,6 +43,7 @@ export default {
   width: 50%;
   margin-left: 20px;
   font-size: 10px;
+
 }
 
 .desire{
@@ -68,17 +69,148 @@ export default {
 }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
-.image{
+
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+body {
+  margin: 0;
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(230, 100%, 95%);
+  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+  height: 100vh;
   display: flex;
-    margin-left: 35%;
+}
+
+h2 {
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+  position: absolute;
+    left: 13%;
+}
+
+p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 26px;
+  position: relative;
+  top: 28%;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .image {
+    margin-left: 36%;
+    margin-top: 10%;
+    height: 201px;
+    border: 5px solid aliceblue;
+    border-radius: 50px;
+  }
+
+  .desire {
+    height: 97vh;
+  }
+
+  .about {
+    width: 80%;
+  }
+  h2{
+    font-size:2.5rem;
+    position: absolute;
+    left: 15%;
+  }
+  p{
+    font-size: 16px;
+    position: relative;
+    top: 14%;
+  }
+}
+
+/* For screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .image {
+    display: flex;
+    margin-left: 36%;
     height: 450px;
     border: 5px solid aliceblue;
     border-radius: 50px;
+    margin-top: 10%;
+  }
+
+  .desire {
+    height: 140vh;
+  }
+
+  .about {
+    width: 80%; 
+  }
+
+  .lub {
+    font-size: 18px;
+    margin-left: 10%;
+  }
 }
-.desire{
-  height: 140vh;
-}
-  
+
+
+@media only screen and (min-width: 1024px) {
+  .image {
+    margin-top: -20%; 
+  }
+
+  .about {
+    width: 40%; 
+    margin-left: 50px; 
+  }
+
+  .desire {
+    height: 100vh;
+  }
 }
 </style>

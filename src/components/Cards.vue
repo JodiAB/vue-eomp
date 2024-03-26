@@ -197,7 +197,7 @@
             </div>
             <div class='square2' >
                 <div class="square-container2">
-                    <div class="align-center"></div>
+                    <div class="align-center5"></div>
                     {{$store.state.ProjCard.ProjCard.length ? $store.state.ProjCard.ProjCard[5]['para'] : 'Loading...'}}
                     <br>
                     <br>
@@ -462,23 +462,7 @@ transform: translateY(-50%) translateX(0px)  scale(1);
     }
 
     
-    /*You can delete this style*/
-    .centerflipcards{
-  display:block;
-        width:1330px;
-  height:440px;
-        text-align:center;
-        margin:0 auto;
-        margin-top:25px;
-    }
-    .centerflipcardsb{
-        display:block;
-        width:1330px;
-  height:440px;
-        text-align:center;
-        margin:0 auto;
-        margin-top:25px;
-    }
+
 .clearfix{clear:both;}
 .centerflipcards p{
   font-family:"Open Sans";
@@ -489,26 +473,120 @@ transform: translateY(-50%) translateX(0px)  scale(1);
 .PI{
     width:100%;
 }
-@media only screen and (min-width: 375px) and (max-width: 768px) {
 
-    .centerflipcards{
+.centerflipcardsb{
+    display:flex;
+    margin-left: 4%;
+}
+.centerflipcards{
+    display:flex;
+    margin-left: 4%;
+}
+
+@media only screen and (max-width: 425px) {
+    .centerflipcards,
+    .centerflipcardsb {
         display: flex;
-    flex-direction: column;
-    height: 1010px;
-    margin-left: 140px;
+        flex-direction: column;
+        height: 185vh; /* Adjust the height as needed */
+        margin-left: -20px; /* Adjust this margin as needed */
     }
 
-    .square-container{
+    .square-flip {
+        margin: 20px auto; /* Adjust the margin for spacing between flip cards */
+    }
+
+    .square-container,
+    .square-container2 {
         padding: 1px;
     }
-    .centerflipcardsb{
+}
+
+@media only screen and (max-width: 375px) {
+    .centerflipcards {
         display: flex;
         flex-direction: column;
         height: 1010px;
-        margin-left: 140px;
+        margin-left: -20px; /* Adjust this margin as needed */
     }
 
+    .square-container {
+        padding: 1px;
+    }
+
+    .centerflipcardsb {
+        display: flex;
+        flex-direction: column;
+        height: 1010px;
+        margin-left: -20px; /* Adjust this margin as needed */
+    }
 }
+
+@media only screen and (max-width: 320px) {
+    .centerflipcards {
+        display: flex;
+        flex-direction: column;
+        height: 1010px;
+        margin-left: -30px; /* Adjust this margin as needed */
+    }
+
+    .square-container {
+        padding: 1px;
+    }
+
+    .centerflipcardsb {
+        display: flex;
+        flex-direction: column;
+        height: 1010px;
+        margin-left: -30px; /* Adjust this margin as needed */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .centerflipcards,
+    .centerflipcardsb {
+        display: flex;
+        flex-direction: column;
+        height: 160vh; /* Adjust the height as needed */
+        margin-left: -20px; /* Adjust this margin as needed */
+    }
+
+    .square-flip {
+        margin: 20px auto; /* Adjust the margin for spacing between flip cards */
+    }
+
+    .square-container,
+    .square-container2 {
+        padding: 1px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .centerflipcards,
+    .centerflipcardsb {
+        display: flex;
+        flex-direction: column;
+        height: 185vh; /* Adjust the height as needed */
+        margin-left: -20px; /* Adjust this margin as needed */
+    }
+
+    .square-flip {
+        margin: 20px auto; /* Adjust the margin for spacing between flip cards */
+    }
+
+    .square-container,
+    .square-container2 {
+        padding: 1px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+.align-center5{
+font-size: 15px;
+}
+}
+
+
    
 
 </style>

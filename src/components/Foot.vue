@@ -25,15 +25,41 @@ import { mapState } from 'vuex';
 <style >
 
   
+.foot {
+   
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 320px) {
   .foot {
-    position:fixed ;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    font-size: 12px; 
+    position: absolute;
+    bottom: inherit;
   }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .foot {
+    font-size: 14px; 
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .foot {
+    font-size: 16px; 
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .foot {
+    font-size: 18px; 
+  }
+}
   
 </style>

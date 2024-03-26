@@ -5,13 +5,13 @@
     <div class="glowing-box">
       <div class="content">
         <div class="neon-box">
-          <img :src="$store.state.Home.Home[0].img" >
+          <!-- <img class="pic" :src="$store.state.Home.Home[0].img" > -->
         <h1 class="lub">
           <!-- {{ homeData && homeData.length > 0 ? homeData[0].heading : 'Default Heading' }} -->
           {{$store.state.Home.Home.length ? $store.state.Home.Home[0].heading : 'Loading...'}}
 
         </h1>
-        <p>
+        <p class="para">
           {{$store.state.Home.Home.length ? $store.state.Home.Home[0]['sub-heading'] : 'Loading...'}}
 
         </p>
@@ -55,32 +55,31 @@ export default {
   },
   methods: {
   downloadCV() {
-    // Specify the path to your PDF file
+    
     const pdfPath = '/Jodi-Abrahams-CV.pdf';
 
-    // Create an anchor element
     const link = document.createElement('a');
 
-    // Set the href attribute to the path of your PDF file
+   
     link.href = pdfPath;
 
-    // Set the download attribute to specify the file name when downloaded
+
     link.download = 'Jodi-Abrahams-CV.pdf';
 
-    // Append the link to the body
+
     document.body.appendChild(link);
 
-    // Trigger a click on the link to start the download
+ 
     link.click();
 
-    // Remove the link from the body
+   
     document.body.removeChild(link);
   }
 }
 }
 </script>
 
-<style>
+<style scoped>
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
@@ -103,10 +102,14 @@ export default {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 18px;
+  font-size: 30px;
   overflow: hidden;
+  padding-right: 16px;
   font-family: "Orbitron";
   animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; 
+}
+button{
+  bottom: 121px;
 }
 
 @keyframes reveal {
@@ -124,5 +127,127 @@ export default {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .home {
 
+    padding: 50px;
+    height: 58vh;
+  }
+
+  .lub {
+
+    font-size: 85px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .home {
+
+    padding: 40px;
+  }
+
+  .lub {
+
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .home {
+
+    padding: 30px;
+  }
+
+  .lub {
+
+    font-size: 20px;
+    position: relative;
+    right: 43px;
+
+  }
+  h2, p {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    font-size: 14px;
+    padding-right: 77px;
+}
+
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .home {
+
+    padding: 20px;
+  }
+
+  .lub {
+
+    font-size: 18px;
+  }
+  h2, p {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    font-size: 14px;
+    padding-right: 77px;
+}
+}
+
+
+@media only screen and (max-width: 374px) {
+  .home {
+
+    padding: 10px;
+  }
+
+  .lub {
+
+    font-size: 43px;
+    position: relative;
+    left: 22px;
+  }
+
+  .canvas{
+    height: 26vh;
+  }
+  .neon-box {
+    width: 90%; 
+    margin: 0 auto; 
+  }
+
+  .pic{
+    width: 90%;
+    margin: 0 auto;
+  }
+  button{
+    position: relative;
+    left: 15px;
+    top: 60px;
+  }
+}
+@media only screen and (max-width: 320px) {
+
+h2, p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 19px;
+  position: relative;
+  left: 5%;
+  top: 14px;
+}
+canvas{
+  height: 390vh;
+}
+.foot{
+  position: relative;
+  bottom: 100px;
+
+}
+
+
+}
 </style>

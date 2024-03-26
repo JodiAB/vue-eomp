@@ -2,6 +2,7 @@
   <div>
     <Navi />
     <router-view />
+    
     <Spin/>
     <Foot />
   </div>
@@ -17,8 +18,6 @@ export default {
     Foot,
     Spin
 
-    
-  
   },
 };
 </script>
@@ -54,6 +53,28 @@ h2, p {
 
 h2 {
   font-size: 24px;
+}
+
+.desire {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-50deg, green, #6A0DAD, Black, #9f9da0);
+  background-size: 200% 200%; /* Increase the size to cover the entire animation */
+  animation: fire 7s ease infinite;
+}
+
+@keyframes fire {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 </style>

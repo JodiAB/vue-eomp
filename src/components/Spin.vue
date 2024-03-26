@@ -16,9 +16,7 @@
   </div>
 </div>
 </div>
-<div v-else>
-  {{ dataAvailable ? data : "loading" }}
-</div>
+
 </template>
 <script>
 export default {
@@ -51,7 +49,7 @@ export default {
 
 
 <style>
-  /* SOLAR SYSTEM */
+
 
 .solar-system {
   width: 250px;
@@ -59,6 +57,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  display:flex;
 
 }
 
