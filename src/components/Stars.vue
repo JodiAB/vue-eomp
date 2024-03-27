@@ -35,8 +35,8 @@ export default {
           x: Math.random() * this.canvas.width,
           y: Math.random() * this.canvas.height,
           radius: Math.random() * 2,
-          speedX: (Math.random() - 0.5) * 0.5, // Adjust speed as needed
-          speedY: (Math.random() - 0.5) * 0.5, // Adjust speed as needed
+          speedX: (Math.random() - 0.5) * 0.5,
+          speedY: (Math.random() - 0.5) * 0.5, 
         });
       }
     },

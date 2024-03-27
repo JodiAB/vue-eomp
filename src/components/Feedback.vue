@@ -46,6 +46,7 @@
                 
             </div>
         </div>
+        <br>
         <div class="card__container bd-container">
             <div class="card__glass">
               <img :src="$store.state.Feedback.Feedback[3].img"  class="card__img">

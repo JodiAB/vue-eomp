@@ -5,16 +5,20 @@
       <div class="mar">
         <div class="time">
           <div class="box-l">
+            <div class="head">
             <h2>{{$store.state.Time.Time.length ? $store.state.Time.Time[0].heading : 'Loading...'}}</h2>
             <div class="date">
               {{$store.state.Time.Time.length ? $store.state.Time.Time[0]['date'] : 'Loading...'}}
-              <h3>{{$store.state.Time.Time.length ? $store.state.Time.Time[0]['text'] : 'Loading...'}}</h3>
-              <p>{{$store.state.Time.Time.length ? $store.state.Time.Time[0]['point1'] : 'Loading...'}}</p>
+              <!-- <h3>{{$store.state.Time.Time.length ? $store.state.Time.Time[0]['text'] : 'Loading...'}}</h3> -->
+            </div>
+              <p class="paragraph">{{$store.state.Time.Time.length ? $store.state.Time.Time[0]['point1'] : 'Loading...'}}</p>
+              
+            </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    
 
     <div class="line"></div>
 
@@ -23,13 +27,16 @@
       <div class="mar">
         <div class="time-r">
           <div class="box-r">
+            <div class="hea">
             <h2>{{$store.state.Time.Time.length ? $store.state.Time.Time[1].heading : 'Loading...'}}</h2>
-            <div class="date">
+            <div class="dat">
               {{$store.state.Time.Time.length ? $store.state.Time.Time[1]['date'] : 'Loading...'}}
-              <h3>{{$store.state.Time.Time.length ? $store.state.Time.Time[1]['text'] : 'Loading...'}}</h3>
-              <p>{{$store.state.Time.Time.length ? $store.state.Time.Time[1]['point1'] : 'Loading...'}}</p>
+              <!-- <h3>{{$store.state.Time.Time.length ? $store.state.Time.Time[1]['text'] : 'Loading...'}}</h3> -->
+              </div>
+              <p class="para">{{$store.state.Time.Time.length ? $store.state.Time.Time[1]['point1'] : 'Loading...'}}</p>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -39,13 +46,16 @@
       <div class="mar">
         <div class="time-l">
           <div class="box-l">
+            <div class="head">
             <h2>{{$store.state.Time.Time.length ? $store.state.Time.Time[2].heading : 'Loading...'}}</h2>
-            <div class="date">
+            <div class="da">
               {{$store.state.Time.Time.length ? $store.state.Time.Time[2]['date'] : 'Loading...'}}
-              <h3>{{$store.state.Time.Time.length ? $store.state.Time.Time[2]['text'] : 'Loading...'}}</h3>
-              <p>{{$store.state.Time.Time.length ? $store.state.Time.Time[2]['point1'] : 'Loading...'}}</p>
+              <!-- <h3>{{$store.state.Time.Time.length ? $store.state.Time.Time[2]['text'] : 'Loading...'}}</h3> -->
+              </div>
+              <p class="par">{{$store.state.Time.Time.length ? $store.state.Time.Time[2]['point1'] : 'Loading...'}}</p>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -106,31 +116,120 @@ export default {
 .line {
   position: absolute;
   left: 50%;
-  top: 756px;
-  bottom: -961px;
+  top: 632px;
+  bottom: -630px;
   width: 2px;
   background-color: #3498db;
   transform: translateX(-50%);
 }
-
-@media only screen and (min-width: 375px) and (max-width: 768px)  {
-  .box-l{
-      right: 385px;
-      border: 2px solid #f0f8ff;
-      margin: 53px 464px;
-      padding: 0px 150px 10px 10px;
-     
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .box-l,
+  .box-r {
+    right: 10px; 
+    left: 10px; 
+    margin: 10px; 
+    padding: 10px;
   }
-  .box-r{
-    left: 170px;
+  .line{
+    display: none;
+  }
+  .dot{
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .box-l {
+    right: 385px;
     border: 2px solid #f0f8ff;
-    margin: 125px 260px;
-    padding: 0px 225px 0px -1px;
+    margin: 53px 464px;
+    padding: 0px 205px 10px 10px;
+  }
+
+  .box-r {
+    right: 455px;
+    border: 2px solid #f0f8ff;
+    margin: 53px 464px;
+    padding: 0px 372px 10px 17px;
   }
 
   .line{
-    bottom: -1474px;
+    display: none;
   }
- 
+  .dot{
+    display:none;
   }
+  .head{
+    display:flex
+  }
+  .hea{
+    display: flex;
+    position: relative;
+  }
+
+  .date{
+    display: flex;
+    position: relative;
+    left: 45px;
+    top: 52px;
+  }
+  .dat{
+    display: flex;
+    position: relative;
+    left: 92px;
+    top: 52px; 
+  }
+  .da{
+    display: flex;
+    position: relative;
+    left: 33px;
+    top: 83px;
+  }
+
+  .paragraph{
+    display:flex;
+    font-size: 11px;
+    position: relative;
+    top: 25px;
+    left: 92px;
+  }
+  .para{
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: 13px;
+    left: 151px;
+  }
+  .par{
+
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: 13px;
+    left: 60px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .box-l {
+    right: 455px;
+    border: 2px solid #f0f8ff;
+    margin: 53px 464px;
+    padding: 0px 372px 10px 17px;
+  }
+
+  .box-r {
+    right: 455px;
+    border: 2px solid #f0f8ff;
+    margin: 53px 464px;
+    padding: 0px 372px 10px 17px;
+  }
+
+  .line{
+    display: none;
+  }
+  .dot{
+    display:none;
+  }
+}
 </style>
