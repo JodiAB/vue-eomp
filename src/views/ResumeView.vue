@@ -165,11 +165,12 @@ export default {
   .info-item {
     margin-bottom: 10px;
   }
+  
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
   .resume {
-    width: 80%;
+    width: 88%;
     margin: 0 auto;
   }
 
@@ -181,6 +182,28 @@ export default {
     width: 100%;
     margin-bottom: 10px;
   }
+
+  .desire{
+    width: 142%;
+  }
+  .box-r[data-v-7f3aebf1] {
+    left: -455px;
+    border: 2px solid #f0f8ff;
+    margin: 53px 464px;
+    padding: 1px 322px 10px 17px;
+}
+.box-l[data-v-7f3aebf1] {
+  left: -455px;
+  border: 2px solid #f0f8ff;
+  margin: 53px 464px;
+  padding: 1px 322px 10px 17px;
+}
+
+
+.foot {
+    font-size: 15px;
+    width: 136%;
+}
 }
 
 

@@ -385,6 +385,21 @@ button{
     .radial-bar .text {
         left: 23%;
     }
+    .card-description {
+      font-size: small;
+    }
+    .cardL{
+      position: relative;
+    right: -9px;
+    }
+
+    .cardR{
+      position: relative;
+    right: -9px;
+    }
+    .card-title{
+      font-size: 22px;
+    }
 
 }
 @media only screen and (max-width: 320px) {
@@ -392,6 +407,13 @@ button{
       width: 280px;
       padding: 0px 10px;
       margin-left: 10px;
+    }
+    .card-description {
+      font-size: small;
+    }
+    .cardL, .cardR{
+      position: relative;
+      left: 10px;
     }
   }
   
@@ -401,6 +423,9 @@ button{
       padding: 0px 20px;
       margin-left: 20px;
     }
+    .card-description {
+      font-size: small;
+    }
   }
   
   @media only screen and (min-width: 376px) and (max-width: 425px) {
@@ -409,6 +434,9 @@ button{
       padding: 0px 20px;
       margin-left: 30px;
     }
+    .card-description {
+      font-size: small;
+    }
   }
   
   @media only screen and (min-width: 426px) and (max-width: 768px) {
@@ -416,6 +444,9 @@ button{
       width: 404px;
       padding: 0px 20px;
       margin-left: 116px;
+    }
+    .card-description {
+      font-size: small;
     }
   }
 </style>

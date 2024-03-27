@@ -1,5 +1,6 @@
 <template>
 <div class="desire">
+  <transition name="fade">
   <div class="about">
    
     <h2>{{$store.state.About.About.length ? $store.state.About.About[0].heading : 'Loading...'}}</h2>
@@ -8,6 +9,7 @@
 
     </div>
   </div>
+</transition>
   <img class="image" :src="$store.state.About.About[0].img">
 </div>
 </template>
@@ -27,6 +29,12 @@ export default {
 }
 </script>
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
 .image{
   
   display: flex;
