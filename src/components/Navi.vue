@@ -7,13 +7,14 @@
       <router-link to="/resume">Resume</router-link> |
       <router-link to="/projects">Projects</router-link> |
       <router-link to="/testimonials">Testimonials</router-link> |
+      <router-link to="/practice">practice</router-link> |
       <router-link to="/contact">Contact</router-link>
     </nav>
   </template>
   
   <script>
   export default {
-    // You can add component-specific logic here if needed
+   
   };
   </script>
   
@@ -31,7 +32,48 @@
   }
   
   nav a.router-link-exact-active {
-    color: #42b983;
+    color: #a3c1b3;
   }
+
+
+@media only screen and (min-width: 1024px) {
+  nav {
+ 
+    padding: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+ 
+    padding: 15px;
+  }
+}
+
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  nav {
+ 
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  nav {
+   
+    padding: 5px;
+  }
+}
+
+
+@media only screen and (max-width: 374px) {
+  nav {
+ 
+    padding: 0;
+  }
+}
+
   </style>
   
