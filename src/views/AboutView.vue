@@ -153,6 +153,11 @@ p {
   position: relative;
   top: 28%;
 }
+
+@media only screen and (max-width: 374px) {
+
+  
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .image {
     margin-left: 36%;
@@ -182,11 +187,12 @@ p {
 }
 
 
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .image {
     display: flex;
-    margin-left: 36%;
-    height: 450px;
+    margin-left: 38%;
+    height: 386px;
     border: 5px solid aliceblue;
     border-radius: 50px;
     margin-top: 10%;
@@ -213,6 +219,12 @@ p {
     top: 20%;
     left: 25px;
   }
+
+  .foot {
+    font-size: 18px;
+    bottom: -370px;
+    position: absolute;
+}
 }
 
 

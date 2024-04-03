@@ -2,7 +2,7 @@
     <section id="skills">
 
 
-        <h1>{{$store.state.Time.Time.length ? $store.state.Time.Time[3].heading : 'Loading...'}}</h1>
+        <h1 class="move">{{$store.state.Time.Time.length ? $store.state.Time.Time[3].heading : 'Loading...'}}</h1>
 
 
 
@@ -36,14 +36,14 @@ Proficient in MySQL database design, optimization, and SQL query writing for sca
       <div class="cardR">
               <div class="card">
                 <div class="card-content">
-                    <h2 class="card-title">{{$store.state.Time.Time.length ? $store.state.Time.Time[6].heading : 'Loading...'}}</h2>
+                    <h2 class="card-title food">{{$store.state.Time.Time.length ? $store.state.Time.Time[6].heading : 'Loading...'}}</h2>
                     <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[6]['Description'] : 'Loading...'}}</p>
                 </div>
               </div>
             
               <div class="card">
                 <div class="card-content">
-                <h2 class="card-title">{{$store.state.Time.Time.length ? $store.state.Time.Time[7].heading : 'Loading...'}}</h2>
+                <h2 class="card-title food">{{$store.state.Time.Time.length ? $store.state.Time.Time[7].heading : 'Loading...'}}</h2>
                   <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[7]['Description'] : 'Loading...'}}</p>
                 </div>
               </div>
@@ -397,21 +397,39 @@ button{
         left: 23%;
     }
     .card-description {
-      font-size: small;
+      font-size: 12px;
     }
+
+    .card-content {
+      padding: 3px;
+    background-color: transparent;
+}
     .cardL{
       position: relative;
     right: -9px;
+    padding: 0px 138px 1px 1px;
     }
-
+ 
     .cardR{
       position: relative;
     right: -9px;
+    padding: 0px 138px 1px 1px;
     }
     .card-title{
-      font-size: 22px;
+      font-size: 15px;
+    }
+
+    .par{
+      left: 44px;
     }
     
+    .paragraph{
+      left: 76px;
+    }
+
+    .para{
+      left: 136px;
+    }
 
     .desire{
       width: auto;
@@ -431,7 +449,16 @@ button{
       position: relative;
       left: 10px;
     }
-  }
+
+    .box-l{
+      right: 2px;
+    left: -4px;
+    margin: 7px;
+    padding: 0px 66px 0px 0px;
+    font-size: xx-small;
+}
+    }
+  
   
   @media only screen and (min-width: 321px) and (max-width: 375px) {
     .containers {
@@ -463,6 +490,11 @@ button{
     }
     .card-description {
       font-size: small;
+    }
+
+    .move{
+      position: relative;
+      right: 100px;
     }
   }
 </style>

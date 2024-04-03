@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Navi from '@/components/Navi.vue'; // Adjust the import path based on your project structure
+import Navi from '@/components/Navi.vue'; 
 import Foot from '@/components/Foot.vue';
 import Spin from '@/components/Spin.vue';
 export default {

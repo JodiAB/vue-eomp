@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="loco">
     <div class="item">
       <div class="dot"></div>
       <div class="mar">
@@ -122,6 +122,10 @@ export default {
   background-color: #3498db;
   transform: translateX(-50%);
 }
+
+.date, .dat, .da{
+  color: aliceblue
+}
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .box-l,
   .box-r {
@@ -140,17 +144,22 @@ export default {
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   .box-l {
-    right: 385px;
+    right: 464px;
     border: 2px solid #f0f8ff;
     margin: 53px 464px;
-    padding: 0px 205px 10px 10px;
+    padding: 0px 362px 0px 0px;
   }
 
   .box-r {
     right: 455px;
     border: 2px solid #f0f8ff;
     margin: 53px 464px;
-    padding: 0px 372px 10px 17px;
+    padding: 0px 367px 0px 0px;
+  }
+
+  .time-r{
+    position: relative;
+    right: 818px;
   }
 
   .line{
@@ -191,14 +200,14 @@ export default {
     font-size: 11px;
     position: relative;
     top: 25px;
-    left: 92px;
+    left: 76px;
   }
   .para{
     display: flex;
     font-size: 12px;
     position: relative;
     top: 13px;
-    left: 151px;
+    left: 142px;
   }
   .par{
 
@@ -206,11 +215,16 @@ export default {
     font-size: 12px;
     position: relative;
     top: 13px;
-    left: 60px;
+    left: 43px;
   }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 768px) {
+  .loco{
+    position: relative;
+    right: 155px;
+  }
+ 
   .box-l {
     right: 455px;
     border: 2px solid #f0f8ff;

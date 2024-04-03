@@ -148,8 +148,18 @@ button{
 
   .lub {
 
-    font-size: 22px;
+    font-size: 54px;
   }
+
+  button{
+    bottom: 24px;
+  }
+
+  .foot {
+    font-size: 18px;
+    bottom: 10px;
+    position: absolute;
+}
 }
 
 
@@ -161,17 +171,28 @@ button{
 
   .lub {
 
-    font-size: 20px;
+    font-size: 62px;
     position: relative;
-    right: 43px;
-
-  }
+    right: -80px;
+}
   h2, p {
     color: #fff;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    text-align: left;
-    font-size: 14px;
-    padding-right: 77px;
+    text-align: center;
+    font-size: 20px;
+    padding-right: 0px;
+    position: relative;
+    left: 71px;
+}
+
+button{
+  bottom: 30px;
+    left: 79px;
+}
+
+.foot{
+  padding: 0px;
+    font-size: small;
 }
 
 }
@@ -180,19 +201,24 @@ button{
 @media only screen and (min-width: 375px) and (max-width: 424px) {
   .home {
 
-    padding: 20px;
+    padding: 36px;
   }
 
   .lub {
 
-    font-size: 18px;
+    font-size: 50px;
   }
   h2, p {
     color: #fff;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    text-align: left;
-    font-size: 14px;
-    padding-right: 77px;
+    text-align: center;
+    font-size: 11px;
+
+}
+
+button{
+  bottom: 20px;
+    left: 3px;
 }
 }
 
@@ -225,7 +251,7 @@ button{
   button{
     position: relative;
     left: 15px;
-    top: 60px;
+    top: -2px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -236,18 +262,44 @@ h2, p {
   text-align: center;
   font-size: 19px;
   position: relative;
-  left: 5%;
+  left: 1%;
   top: 14px;
 }
 canvas{
-  height: 390vh;
+  height: 520vh;
 }
-.foot{
-  position: relative;
-  bottom: 100px;
+.foot {
+    font-size: 12px;
+    position: absolute;
+    bottom: -301%;
+    width: 393%;
+    height: 72px;
+    font-size: 41px;
+}
 
+.lub {
+  font-size: 37px;
+    position: relative;
+    left: 9px;
+    top: -22px;
 }
 
 
+h2{
+  font-size: 79px;
+    position: relative;
+    left: 25%;
+    top: 621px;
+}
+
+.neon-box {
+    width: 190%;
+}
+
+button {
+    position: relative;
+    left: 0px;
+    top: 55px;
+}
 }
 </style>

@@ -86,7 +86,7 @@ export default {
 }
 }
 </script>
-<style>
+<style scoped>
 .neon-button {
   font-family: 'Arial', sans-serif;
   font-size: 24px;
@@ -172,7 +172,14 @@ export default {
   .resume {
     width: 88%;
     margin: 0 auto;
+    position: relative;
+    right: 71px;
   }
+
+  h2, p {
+    font-size: 14px;
+  }
+
 
   .info {
     width: 100%;
@@ -220,6 +227,12 @@ export default {
   .info-item {
     margin-bottom: 20px;
   }
+
+  .foot {
+    font-size: 18px;
+    bottom: -1208px;
+    position: absolute;
+}
 }
 
 
