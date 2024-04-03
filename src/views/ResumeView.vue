@@ -173,7 +173,7 @@ export default {
     width: 88%;
     margin: 0 auto;
     position: relative;
-    right: 71px;
+    right: -7px;
   }
 
   h2, p {
@@ -241,6 +241,11 @@ export default {
     width: 50%;
     margin: 0 auto; 
   }
+
+
+
+
+
 }
 
 

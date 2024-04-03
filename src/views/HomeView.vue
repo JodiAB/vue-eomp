@@ -220,6 +220,12 @@ button{
   bottom: 20px;
     left: 3px;
 }
+
+.foot{
+  position: relative;
+    top: 208px;
+    left: -8px;
+}
 }
 
 
@@ -294,12 +300,20 @@ h2{
 
 .neon-box {
     width: 190%;
+    position: relative;
+    left: 7px;
 }
 
 button {
     position: relative;
-    left: 0px;
+    left: 8px;
     top: 55px;
 }
+}
+
+@media only screen and (max-width: 1024px) {
+  button{
+    bottom: 32px;
+  }
 }
 </style>

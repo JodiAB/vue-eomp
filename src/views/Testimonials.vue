@@ -47,5 +47,19 @@ export default {
   100% {
     background-position: 0% 50%;
   }
+
+  
+}
+
+@media only screen and (min-width: 375px){
+  .desire{
+    width: 105%;
+  }
+}
+
+@media only screen and (min-width: 320px){
+  .desire{
+    width: 109%;
+  }
 }
 </style>

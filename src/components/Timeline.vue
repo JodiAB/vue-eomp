@@ -217,6 +217,11 @@ export default {
     top: 13px;
     left: 43px;
   }
+
+  .loco{
+    position: relative;
+    left: 87px;
+  }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 768px) {
@@ -260,6 +265,21 @@ export default {
   .time-l{
     position: relative;
     left: 168px;
+}
+}
+
+@media only screen and (max-width: 1024px){
+  .line{
+    bottom: -1170px;
+    top: 685px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 17px;
 }
 }
 </style>

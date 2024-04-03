@@ -230,7 +230,7 @@ p {
 
 @media only screen and (min-width: 1024px) {
   .image {
-    margin-top: -20%; 
+    margin-top: -43%; 
   }
 
   .about {

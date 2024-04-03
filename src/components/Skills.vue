@@ -406,13 +406,13 @@ button{
 }
     .cardL{
       position: relative;
-    right: -9px;
+    right: -81px;
     padding: 0px 138px 1px 1px;
     }
  
     .cardR{
       position: relative;
-    right: -9px;
+    right: -81px;
     padding: 0px 138px 1px 1px;
     }
     .card-title{
@@ -469,6 +469,8 @@ button{
     .card-description {
       font-size: small;
     }
+
+ 
   }
   
   @media only screen and (min-width: 376px) and (max-width: 425px) {

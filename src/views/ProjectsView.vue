@@ -70,11 +70,26 @@ animation: fire-6375b3f9 7s ease infinite;
     height: 394vh;
   }
 }
+@media only screen and (max-width: 375px) {
+  .desire{
+    height: 394vh;
+  }
 
+  .foot{
+    width: 126%;
+  }
+}
 @media only screen and (max-width: 425px) {
   .desire{
     height: 395vh;
     width: 133%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .desire{
+    height: 156vh;
+    width: 102%;
   }
 }
 </style>

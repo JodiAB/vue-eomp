@@ -22,7 +22,7 @@ import { mapState } from 'vuex';
         }
   }
 </script>
-<style >
+<style scoped >
 
   
 .foot {
@@ -40,7 +40,7 @@ import { mapState } from 'vuex';
   .foot {
     font-size: 12px; 
     position: absolute;
-    bottom: inherit;
+    bottom: -7%;
   }
 }
 

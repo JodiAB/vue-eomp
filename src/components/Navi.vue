@@ -2,103 +2,76 @@
 
 <template>
   <nav>
-    <div class="navbar-toggle" @click="toggleMenu">
-      <div class="icon"></div>
-      <div class="icon"></div>
-      <div class="icon"></div>
-    </div>
-    <div class="navbar-links" :class="{ 'active': isMenuOpen }">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/resume">Experience</router-link> |
-      <router-link to="/projects">Projects</router-link> |
-      <router-link to="/testimonials">Testimonials</router-link> |
-      <router-link to="/contact">Contact</router-link>
-    </div>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> |
+    <router-link to="/resume">Resume</router-link> |
+    <router-link to="/projects">Projects</router-link> |
+    <router-link to="/testimonials">References</router-link> |
+    <router-link to="/contact">Contact</router-link>
   </nav>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      isMenuOpen: false
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    }
-  }
+ 
 };
 </script>
 
 <style scoped>
 nav {
+  
   padding: 10px;
   background-color: transparent;
   text-align: right;
 }
 
-.navbar-toggle {
-  display: none; /* Hide the toggle button by default */
-}
-
-.navbar-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.navbar-links.active {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #f9f9f9;
-  width: 100%;
-}
-
-.navbar-links a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
+nav a {
+  font-weight: bold;
   color: #2c3e50;
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar-links {
-    display: none; /* Hide the links on smaller screens */
-  }
-
-  .navbar-toggle {
-    display: block; /* Display the toggle button on smaller screens */
-    cursor: pointer;
-  }
-
-  .icon {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: transform 0.4s;
-  }
-
-  .icon:nth-child(2) {
-    transform: translateY(8px);
-  }
-
-  .icon:first-child.active {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .icon:nth-child(2).active {
-    opacity: 0;
-  }
-
-  .icon:last-child.active {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
+nav a.router-link-exact-active {
+  color: #a3c1b3;
 }
+
+
+@media only screen and (min-width: 1024px) {
+nav {
+
+  padding: 20px;
+}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+nav {
+
+  padding: 15px;
+}
+}
+
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+nav {
+
+  padding: 10px;
+}
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+nav {
+ 
+  padding: 5px;
+}
+}
+
+
+@media only screen and (max-width: 374px) {
+nav {
+
+  padding: 0;
+}
+}
+
 </style>
