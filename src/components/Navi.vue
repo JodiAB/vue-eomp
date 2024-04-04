@@ -63,6 +63,7 @@ nav {
 nav {
  
   padding: 5px;
+  width: max-content;
 }
 }
 

@@ -85,7 +85,7 @@ export default {
 .dot {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 728px;
   transform: translate(-50%, -50%);
   width: 10px;
   height: 10px;
@@ -95,18 +95,18 @@ export default {
 
 .box-l {
   position: relative;
-  right: 350px;
-  border: 2px solid #f0f8ff;
-  margin: 60px 442px;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 0 1px #f0f8ff, 0 0 2px #f0f8ff, 0 0 13px #f0f8ff;
+    right: 654px;
+    border: 2px solid #f0f8ff;
+    margin: 59px 826px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #f0f8ff, 0 0 2px #f0f8ff, 0 0 13px #f0f8ff;
 }
 .box-r {
   position: relative;
-  left: 350px;
-  border: 2px solid #f0f8ff;
-  margin: 60px 442px;
+  left: 102px;
+    border: 2px solid #f0f8ff;
+    margin: 60px 826px;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 0 1px #f0f8ff, 0 0 2px #f0f8ff, 0 0 13px #f0f8ff;
@@ -227,7 +227,7 @@ export default {
 @media only screen and (min-width: 425px) and (max-width: 768px) {
   .loco{
     position: relative;
-    right: 155px;
+    left: 50px;
   }
  
   .box-l {

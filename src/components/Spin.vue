@@ -50,6 +50,10 @@ export default {
 
 <style>
 
+.spinner-box{
+  display: flex;
+  justify-content: center;
+}
 
 .solar-system {
   width: 250px;
@@ -57,7 +61,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  display:flex;
 
 }
 

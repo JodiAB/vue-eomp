@@ -86,10 +86,10 @@ animation: fire-6375b3f9 7s ease infinite;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   .desire{
     height: 156vh;
     width: 102%;
   }
-}
+} */
 </style>
