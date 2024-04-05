@@ -12,12 +12,17 @@
     </transition>
   </div>
   <img class="image" :src="$store.state.About.About[0].img">
+
+
   </template>
   
   <script>
   import { mapState } from 'vuex';
-  
+  import Foot from '@/components/Foot.vue';
   export default {
+    components:{
+      Foot
+    },
     computed: {
       ...mapState({
         aboutData: state => state.About
@@ -35,6 +40,7 @@
   .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
     opacity: 0;
   }
+  
   .image{
      display: flex;
      justify-content: flex-end;
@@ -152,39 +158,64 @@
     top: 28%;
   }
   
-  @media only screen and (max-width: 374px) {
   
-    
-  }
-  @media only screen and (min-width: 320px) {
-    .image {
-      margin-left: 31%;
+
+@media only screen and (min-width: 320px) {
+  .image {
+    margin-left: 31%;
     margin-top: 11%;
     height: 319px;
-      border: 5px solid aliceblue;
-      border-radius: 50px;
-    }
-  
-    .desire {
-      height: 97vh;
-    }
-  
-    .about {
-      width: 80%;
-    }
-    h2{
-      font-size:2.5rem;
-      position: absolute;
-      left: 25%;
-    }
-    p{
-      font-size: 16px;
-      position: relative;
-      top: 14%;
-      left: 16px;
-    }
+    border: 5px solid aliceblue;
+    border-radius: 50px;
   }
   
+  .desire {
+    height: 97vh;
+  }
+  
+  .about {
+    width: 80%;
+  }
+  h2{
+    font-size:2.5rem;
+    position: absolute;
+    left: 25%;
+  }
+  p{
+    font-size: 16px;
+    position: relative;
+    top: 14%;
+    left: 16px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+.image{
+  margin-top: -96%;
+}
+.desire{
+  width: 138%;
+}
+
+.foot{
+    bottom: 0;
+    left: 0;
+    width: 133%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    height: 192px;
+    position: relative;
+    top: 4px;
+}
+}
+@media only screen and (min-width: 425px)  {
+  .image{
+    margin-top: -84%;
+  }
+}
   
   
   @media only screen and (min-width: 768px)  {
@@ -211,7 +242,7 @@
     }
   
     h2{
-      left: 38%;
+      left: 37%;
     }
   
     p{
@@ -219,19 +250,20 @@
       left: 25px;
     }
   
-    .foot {
+    /* .foot {
       font-size: 18px;
       bottom: -370px;
       position: absolute;
-  }
+  } */
   }
   
   
   @media only screen and (min-width: 1024px) {
     .image {
-      margin-top: -43%; 
-      position: relative;
-    left: 65%;
+      margin-top: -64%;
+    position: relative;
+    left: 27%;
+    height: auto;
     }
   
     .about {
@@ -241,6 +273,28 @@
   
     .desire {
       height: 100vh;
+    }
+    h2 {
+    left: 20%;
+}
+  
+  }
+  @media only screen and (min-width: 1440px) {
+    p{
+  top: 22%;
+    left: -80px;
+    font-size: x-large;
+    }
+
+    h2{
+      left: 21%;
+    }
+
+    .image {
+      margin-top: -45%;
+    position: relative;
+    left: 27%;
+    height: auto;
     }
   }
   </style>

@@ -7,11 +7,12 @@
 
   <Cards />
   </div>
+
 </template>
 <script>
 import { mapState } from 'vuex';
 import Cards from '@/components/Cards'
-
+import Foot from '@/components/Foot.vue';
 export default {
   computed: {
     ...mapState({
@@ -23,6 +24,7 @@ export default {
   },
   components: {
     Cards,
+    Foot
   }
 }
 </script>

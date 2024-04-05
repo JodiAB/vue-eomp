@@ -1,5 +1,5 @@
 <template >
-  <div class="footer">
+  <div class="footer" id="footer">
       <h2 class="foot">&copy;  <span>{{ currYear }}</span> Jodi Abrahams Portfolio. All rights reserved.</h2>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
 <style scoped >
 
 
-.foot {
+.footer {
  
 bottom: 0;
 left: 0;
@@ -44,9 +44,19 @@ padding: 10px;
 }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 375px) {
-.foot {
-  font-size: 14px; 
+@media (width: 375px) {
+  #footer {
+    bottom: 0;
+    left: 0;
+    width: 133%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    height: 39px;
+    position: relative;
+    top: 150px;
 }
 }
 
@@ -60,6 +70,13 @@ padding: 10px;
 .foot {
   font-size: 18px; 
 }
+}
+
+@media only screen and (min-width: 1440px) {
+  .foot{
+      position: relative;
+    bottom: 0px;
+    }
 }
 
 </style>

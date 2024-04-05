@@ -2,20 +2,20 @@
   <div>
     <Navi />
     <router-view />
-    
     <Spin/>
+    
     <Foot />
   </div>
 </template>
 
 <script>
 import Navi from '@/components/Navi.vue'; 
-import Foot from '@/components/Foot.vue';
+// import Foot from '@/components/Foot.vue';
 import Spin from '@/components/Spin.vue';
 export default {
   components: {
     Navi,
-    Foot,
+    // Foot,
     Spin
 
   },
@@ -30,6 +30,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow-x: hidden;
 }
 
 body {

@@ -1,15 +1,17 @@
 <template >
   <div class="desire">
-      <div>
+      <div class="shoe">
       <h2>{{$store.state.Testimonials.Testimonials.length ? $store.state.Testimonials.Testimonials[0].heading : 'Loading...'}}</h2>
-      <p>{{$store.state.Testimonials.Testimonials.length ? $store.state.Testimonials.Testimonials[0]['para'] : 'Loading...'}}</p>
+      <p class="to">{{$store.state.Testimonials.Testimonials.length ? $store.state.Testimonials.Testimonials[0]['para'] : 'Loading...'}}</p>
   </div>
   <Testo />
 </div>
+
 </template>
 <script>
 import { mapState } from 'vuex';
 import Testo from '../components/Feedback.vue'
+import Foot from '@/components/Foot.vue';
 
 export default {
   computed: {
@@ -22,6 +24,7 @@ export default {
   },
   components:{
     Testo,
+    Foot
 
   }
 }
@@ -36,6 +39,15 @@ export default {
   background-size: 200% 200%; /* Increase the size to cover the entire animation */
   animation: fire 7s ease infinite;
 }
+.shoe{
+  position: relative;
+  left: -55px;
+}
+
+.to{
+  font-size: 11px;
+}
+
 
 @keyframes fire {
   0% {

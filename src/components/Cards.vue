@@ -233,7 +233,51 @@ export default {
 </script>
 <style scoped>
 button{
-    margin-right: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  appearance: none;
+  border: 0;
+  background: 0;
+  position: relative;
+  color: white;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-family: inherit;
+  font-weight: 500;
+  top: 10px;
+}
+button:after{
+  content: '';
+  position: absolute;
+  inset:0;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
+  border-radius: inherit;
+  mix-blend-mode: overlay;
+}
+button iframe{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1) rotate(15deg);
+  opacity: 0.5;
+  filter: blur(5px);
+  transition: all 0.5s ease-in-out;
+}
+button span{
+  position: relative;
+  z-index: 1;
+  opacity: 0.75;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+button:hover iframe{
+  transform: translate(-50%,-50%) scale(0.5);
+  opacity: 1;
+  filter: blur(0);
+}
+button:hover span{
+  opacity: 1;
 }
 .square-flip{
     -webkit-perspective: 1000;

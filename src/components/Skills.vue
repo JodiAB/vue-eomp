@@ -36,21 +36,21 @@ Proficient in MySQL database design, optimization, and SQL query writing for sca
     <div class="cardR">
             <div class="card">
               <div class="card-content">
-                  <h2 class="card-title food">{{$store.state.Time.Time.length ? $store.state.Time.Time[6].heading : 'Loading...'}}</h2>
+                  <h2 class="card-title" id="food">{{$store.state.Time.Time.length ? $store.state.Time.Time[6].heading : 'Loading...'}}</h2>
                   <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[6]['Description'] : 'Loading...'}}</p>
               </div>
             </div>
           
             <div class="card">
               <div class="card-content">
-              <h2 class="card-title food">{{$store.state.Time.Time.length ? $store.state.Time.Time[7].heading : 'Loading...'}}</h2>
+              <h2 class="card-title" id="food">{{$store.state.Time.Time.length ? $store.state.Time.Time[7].heading : 'Loading...'}}</h2>
                 <p class="card-description"> {{$store.state.Time.Time.length ? $store.state.Time.Time[7]['Description'] : 'Loading...'}}</p>
               </div>
             </div>
 
               <div class="card">
               <div class="card-content">
-              <h2 class="card-title food">Vue</h2>
+              <h2 class="card-title">Vue</h2>
                 <p class="card-description"> Proficient in developing dynamic and responsive web applications using Vue.js</p>
               </div>
             </div>
@@ -395,7 +395,20 @@ animation: showText 0.5s 1s linear forwards;
   left: -13%;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 768px)  {
+@media only screen and (min-width: 320px)  {
+  .card-content{
+    padding: 13px;
+  }
+
+  #food{
+    font-size: 11px;
+    position: relative;
+    left: -8px;
+  }
+}
+
+
+@media only screen and (min-width: 375px)  {
   .containers {
       width: 404px;
       height: 500px;
@@ -413,17 +426,13 @@ animation: showText 0.5s 1s linear forwards;
     padding: 3px;
   background-color: transparent;
 }
-  .cardL{
+  .cardL, .cardR{
     position: relative;
-    left: 9px;
-    padding: 0px 306px 1px 1px;
+    left: 15px;
+    padding: 0px 3px 0px 0px;
   }
 
-  .cardR{
-    position: relative;
-    left: 9px;
-    padding: 0px 306px 1px 1px;
-  }
+
   .card-title{
     font-size: 15px;
   }
@@ -445,20 +454,28 @@ animation: showText 0.5s 1s linear forwards;
   }
 
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
   .containers {
     width: 280px;
     padding: 0px 10px;
     margin-left: 10px;
   }
   .card-description {
-    font-size: 8px;
+    font-size: 7px;
+    position: relative;
+    left: 0%;
   }
   .cardL, .cardR{
     position: relative;
     left: 10px;
+    padding: 0px 17px 0px 0px
   }
-
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 0%;
+}
   .box-l{
     right: 2px;
   left: -4px;
@@ -466,10 +483,14 @@ animation: showText 0.5s 1s linear forwards;
   padding: 0px 66px 0px 0px;
   font-size: xx-small;
 }
+
+.move{
+  left: -2%;
+}
   }
 
 
-@media only screen and (min-width: 321px) and (max-width: 375px) {
+@media only screen and (min-width: 375px)  {
   .containers {
     width: 320px;
     padding: 0px 20px;
@@ -482,7 +503,7 @@ animation: showText 0.5s 1s linear forwards;
 
 }
 
-@media only screen and (min-width: 376px) and (max-width: 425px) {
+@media only screen and (min-width: 425px)  {
   .containers {
     width: 360px;
     padding: 0px 20px;
@@ -490,10 +511,22 @@ animation: showText 0.5s 1s linear forwards;
   }
   .card-description {
     font-size: small;
+    position: relative;
+    left: 0%;
   }
+
+  .cardL, .cardR{
+    position: relative;
+    left: 13px;
+    padding: 0px 145px 1px 1px;
+  }
+  .card-title{
+    left: 0%;
+  }
+
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .containers {
     width: 404px;
     padding: 0px 20px;
@@ -501,11 +534,33 @@ animation: showText 0.5s 1s linear forwards;
   }
   .card-description {
     font-size: small;
+    position: relative;
+    left: 0%;
+  }
+  .card-title{
+    position: relative;
+    left: -1%;
+  }
+  .cardL, .cardR{
+    left: -145px;
+    padding: 0px 177px;
   }
 
   .move{
     position: relative;
-    right: 100px;
+    left: -146px;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+
+  .cardL, .cardR{
+    left: -307px;
+  }
+
+  .move{
+    left: -317px;
+  }
+}
+
 </style>

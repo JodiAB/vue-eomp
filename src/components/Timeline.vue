@@ -95,18 +95,18 @@ export default {
 
 .box-l {
   position: relative;
-    right: 654px;
-    border: 2px solid #f0f8ff;
-    margin: 59px 826px;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0 0 1px #f0f8ff, 0 0 2px #f0f8ff, 0 0 13px #f0f8ff;
+  right: 654px;
+  border: 2px solid #f0f8ff;
+  margin: 59px 826px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 1px #f0f8ff, 0 0 2px #f0f8ff, 0 0 13px #f0f8ff;
 }
 .box-r {
   position: relative;
   left: 102px;
-    border: 2px solid #f0f8ff;
-    margin: 60px 826px;
+  border: 2px solid #f0f8ff;
+  margin: 60px 826px;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 0 1px #f0f8ff, 0 0 2px #f0f8ff, 0 0 13px #f0f8ff;
@@ -126,7 +126,7 @@ export default {
 .date, .dat, .da{
   color: aliceblue
 }
-@media only screen and (min-width: 320px) and (max-width: 375px) {
+@media only screen and (min-width: 320px)  {
   .box-l,
   .box-r {
     right: 10px; 
@@ -142,18 +142,18 @@ export default {
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 375px)  {
   .box-l {
-    right: 464px;
+    left: -487px;
     border: 2px solid #f0f8ff;
     margin: 53px 464px;
     padding: 0px 362px 0px 0px;
   }
 
   .box-r {
-    right: 455px;
+    left: 326px;
     border: 2px solid #f0f8ff;
-    margin: 53px 464px;
+    margin: 53px 467px;
     padding: 0px 367px 0px 0px;
   }
 
@@ -199,51 +199,96 @@ export default {
     display:flex;
     font-size: 11px;
     position: relative;
-    top: 25px;
-    left: 76px;
+    top: 2px;
+    left: 113px;
   }
   .para{
     display: flex;
     font-size: 12px;
     position: relative;
-    top: 13px;
-    left: 142px;
+    top: -2px;
+    left: 161px;
   }
   .par{
 
     display: flex;
     font-size: 12px;
     position: relative;
-    top: 13px;
-    left: 43px;
+    top: 1px;
+    left: 78px;
+  }
+  h2{
+    
+    position: relative;
+    left: 10px;
   }
 
   .loco{
     position: relative;
-    left: 87px;
+    left: 92px;
   }
 }
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 425px) {
   .loco{
     position: relative;
-    left: 50px;
+    left: 55px;
   }
  
-  .box-l {
-    right: 455px;
+  .box-l{
+    left: -656px;
     border: 2px solid #f0f8ff;
     margin: 53px 464px;
     padding: 0px 372px 10px 17px;
-  }
+}
 
   .box-r {
-    right: 455px;
+    left: 143px;
     border: 2px solid #f0f8ff;
     margin: 53px 464px;
     padding: 0px 372px 10px 17px;
   }
+  .paragraph{
+    display:flex;
+    font-size: 11px;
+    position: relative;
+    top: 6px;
+    left: 120px;
+  }
+  .para{
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: 3px;
+    left: 161px;
+  }
+  .par{
 
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    left: 84px;
+  }
+
+  .date{
+    display: flex;
+    position: relative;
+    left: 57px;
+    top: 25px;
+  }
+  .dat{
+    display: flex;
+    position: relative;
+    left: 94px;
+    top: 52px; 
+  }
+  .da{
+    display: flex;
+    position: relative;
+    left: 47px;
+    top: 73px;
+  }
   .line{
     display: none;
   }
@@ -267,6 +312,13 @@ export default {
     left: 168px;
 }
 }
+@media only screen and (min-width: 768px){
+
+  .loco {
+    position: relative;
+    left: 230px;
+}
+}
 
 @media only screen and (max-width: 1024px){
   .line{
@@ -282,4 +334,55 @@ export default {
     font-size: 17px;
 }
 }
+
+@media only screen and (min-width: 1440px) {
+  .line {
+    display: inline-grid;
+    position: absolute;
+    width: 2px;
+    background-color: #3498db;
+    left: 24%;
+    top: 7%;
+    bottom: -7px;
+  }
+
+  .box-l {
+    position: relative;
+    margin: 53px 830px;
+    padding: 0px 372px 10px 17px;
+    left: -53%;
+  }
+
+  .box-r {
+    position: relative;
+    margin: 53px 830px;
+    padding: 0px 372px 10px 17px;
+    left: 20%;
+  }
+
+  .dot{
+    display: block;
+    position: relative;
+    left: 24%;
+    bottom: -122px;
+  }
+
+  .paragraph {
+    display: flex;
+    font-size: 11px;
+    position: relative;
+    top: 26px;
+    left: 102px;
+  }
+    .par {
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    left: 73px;
+
+  }
+}
+
+
 </style>
